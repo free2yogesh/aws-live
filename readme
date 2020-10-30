@@ -1,13 +1,9 @@
-sudo apt-get update
-# For Sql-client
-sudo apt-get install mysql-client
-
-# For python and related frameworks
-
-sudo apt-get install python3
-sudo apt-get install python3-flask
-sudo apt-get install python3-pymysql
-sudo apt-get install python3-boto3
-
-# for running application
-sudo python3 Empapp.py
+sudo su
+yum install python3 -y
+yum install python3-pip -y
+pip3 install pymysql boto3 flask
+yum install mysql -y
+yum install git -y
+git clone https://github.com/hshar94/aws-live.git
+cd aws-live
+python3 EmpApp.py
